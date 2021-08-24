@@ -189,11 +189,11 @@ body {
 			 
 			</td>
 			<td colspan="2" id="desarrollador" width="80%">
-			<!-- <iframe width="100%" height="500px" id="frameDet" name="frameDet" src="utils.php?act=init" style="border: none;" >
+			<iframe width="100%" height="500px" id="frameDet" name="frameDet" src="utils.php?act=init" style="border: none;" >
 				<font color="white">
 				</font>
-			</iframe> -->
-				    
+			</iframe> 
+				    <!-- 
 				    <table id ="detalleUsuarios" cellpadding="1" cellspacing="1" border="1" style="border: 1px solid white;" > 
 				    	<tr id="encabezado" style="border-width: 2px" id="fila0">
 				    		<td >Sel </td>
@@ -204,7 +204,7 @@ body {
 				    		<td > IP de conexión </td>
 				    		
 				    		<td > Permisos </td>
-				    		<td id="cdLista" style="display:none ; width: 0px" width="0px" >http://IP:PUERTO1/ </td>
+				    		<td id="cdLista" style="display:none ; width: 0px" width="0px" > </td>
 				    	</tr>
 				    	<tr style="border-width: 2px" id="fila1">
 				    	<td ><input id="radioSel" value="1" onclick="setRadio(this.value)"
@@ -298,7 +298,7 @@ body {
 
 				</td>
 		</tr>
-	
+	-->
 		<tr height="80%" >
 			<td   width="220px"  >
 			
