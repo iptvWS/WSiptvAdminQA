@@ -158,7 +158,7 @@ function listarPersonas( $conexion , $id)
 
 function obtieneRegistros( $conexion , $id)
 {
-    $sql = "SELECT ID, USUARIO, NOMUSUARIO, IDROKU, IP , PERMISOS, LISTA FROM CSTCONTROL WHERE ID>5 ORDER BY ID";
+    $sql = "SELECT ID, USUARIO, NOMUSUARIO, IDROKU, IP , PERMISOS, LISTA, RESETPASS FROM CSTCONTROL WHERE ID>5 ORDER BY ID";
     
    // <td > ID Usuario </td>
    // <td > Usuario </td>
@@ -203,9 +203,11 @@ function obtieneRegistros( $conexion , $id)
                 $tabla.="<td nowrap>".$row[4]."</td>";
                 $tabla.="<td nowrap><select id='".$cont."' onchange='parent.modificaPermisos (this.id, this.value);'>";
                 $tabla.="<option value='S' ".($row[5]=="S"?"selected":"").">S</option><option value='N' ".($row[5]=="N"?"selected":"").">N</option>";
-                $tabla.="<td nowrap style='display:none ;'>".$row[6]."</td>";
                 $tabla.="</select></td>";
-                
+                $tabla.="<td nowrap><select id='".$cont."' onchange='parent.resetPass (this.id, this.value);'>";
+                $tabla.="<option value='S' ".($row[6]=="S"?"selected":"").">S</option><option value='N' ".($row[6]=="N"?"selected":"").">N</option>";
+                $tabla.="</select></td>";
+                $tabla.="<td nowrap style='display:none ;'>".$row[7]."</td>";
                 $tabla.="</tr>";
             }
             
