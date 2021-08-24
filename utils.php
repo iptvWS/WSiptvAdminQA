@@ -230,6 +230,7 @@ function modificarAuth( $conexion, $id, $permisos)
 function modificarDatos( $conexion, $id, $idUsuario, $nomUsuario, $lista)
 {   
     echo "EntraMod";
+    echo "LISTA".$lista;
     $sql = "UPDATE CSTCONTROL SET IDUSUARIO='".$idUsuario."', NOMUSUARIO='".$nomUsuario."', LISTA='".$lista."', USALISTA='S', RESETPASS='S' , FECHAMODIFICA=CURRENT_TIMESTAMP    WHERE ID=".$id;
     // Ejecutamos la consulta (se devolver� true o false):
     return pg_query( $conexion, $sql );
