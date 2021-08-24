@@ -62,11 +62,11 @@ body {
 		valRadio=id;
 	}
 	function abrirModifica() { //CASF.[7.1.1]
-		alert("_numero_"+document.getElementById("detalleUsuarios").rows[valRadio].cells[1].innerHTML+"_nom_"+document.getElementById("detalleUsuarios").rows[valRadio].cells[2].innerHTML+"_idD_"+document.getElementById("detalleUsuarios").rows[valRadio].cells[3].innerHTML);
+		alert("_numero_"+document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[1].innerHTML+"_nom_"+document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[2].innerHTML+"_idD_"+document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[3].innerHTML);
 		
-		document.getElementById("idUsuario").value=document.getElementById("detalleUsuarios").rows[valRadio].cells[2].innerHTML;
-		document.getElementById("nomUsuario").value=document.getElementById("detalleUsuarios").rows[valRadio].cells[3].innerHTML;
-		document.getElementById("lista").value=document.getElementById("detalleUsuarios").rows[valRadio].cells[7].innerHTML;
+		document.getElementById("idUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[2].innerHTML;
+		document.getElementById("nomUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[3].innerHTML;
+		document.getElementById("lista").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[7].innerHTML;
 		setSizePantalla();
 		setCentro();
 		
