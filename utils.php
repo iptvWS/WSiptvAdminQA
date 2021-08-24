@@ -194,7 +194,7 @@ function obtieneRegistros( $conexion , $id)
                
                 $tabla.="<tr style='border-width: 2px' id='fila".$cont."'>";
                 $tabla.="<td nowrap>";
-                $tabla.="<input id='radioSel' name='radioSel'  type='radio' value='".$cont."' onclick='parent.setRadio(this.value)'>";
+                $tabla.="<input id='radioSel' name='radioSel'  type='radio' value='".$cont."' onclick='parent.setRadio(this.value);abrirModifica();'>";
                 $tabla.="</td>";
                 $tabla.="<td nowrap>".$row[0]."</td>";
                 $tabla.="<td nowrap>".$row[1]."</td>";

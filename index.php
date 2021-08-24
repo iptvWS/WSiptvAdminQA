@@ -51,9 +51,9 @@ body {
 		window.open("utils.php?act=init", "frameDet");
 	}
 	function modificaDatos(id){
-		console.log("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value);
 		window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
-		alert("Permisos modificados");
+		alert("Datos modificados");
+		cierraDiv();
 		window.open("utils.php?act=init", "frameDet");
 	}
 	function selID(id){
@@ -126,10 +126,10 @@ body {
 			 			<td ><td>
 			 		</tr>
 			 		<tr height="50px">
-			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#desarrollador" style="color: red">Bloqueo de Usuarios</a><td>
+			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Seleccione permisos')" style="color: red">Bloqueo de Usuarios</a><td>
 			 		</tr>
 			 		<tr height="50px">
-			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="abrirModifica()" style="color: blue">Edición</a><td>
+			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Seleccione un registro')" style="color: blue">Edición</a><td>
 			 		</tr>
 			 		<tr height="50px">
 			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#CSTV2" style="color: red"></a><td>
