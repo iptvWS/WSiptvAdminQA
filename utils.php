@@ -45,7 +45,7 @@ if($accion=="init"){
     
 }else if($accion=='modificaDatos'){
     // abrir en modo s�lo lectura
-    echo "id___".$id;
+    echo "id__ModificaDatos_".$id;
     // "Definici�n" de la base de datos
     $conexion = null;
     $conexion = conectar_PostgreSQL("hyssxqqsenyzws", "f7393c156cc3f0fd9aa4c73673142c54a98a837bdf43fa73dc2392b55b176719"
@@ -229,6 +229,7 @@ function modificarAuth( $conexion, $id, $permisos)
 }
 function modificarDatos( $conexion, $id, $idUsuario, $nomUsuario, $lista)
 {   
+    echo "EntraMod";
     $sql = "UPDATE CSTCONTROL SET IDUSUARIO='".$idUsuario."', NOMUSUARIO='".$nomUsuario."', LISTA='".$idUsuario."', USALISTA='S', RESETPASS='S' , FECHAMODIFICA=CURRENT TIMESTAMP    WHERE ID=".$id;
     // Ejecutamos la consulta (se devolver� true o false):
     return pg_query( $conexion, $sql );
