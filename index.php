@@ -50,8 +50,8 @@ body {
 		alert("Permisos modificados");
 		window.open("utils.php?act=init", "frameDet");
 	}
-	function modificaDatos(){
-		window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value, "frameDet");
+	function modificaDatos(id){
+		window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value, "frameDet");
 		alert("Permisos modificados");
 		window.open("utils.php?act=init", "frameDet");
 	}
@@ -62,8 +62,7 @@ body {
 		valRadio=id;
 	}
 	function abrirModifica() { //CASF.[7.1.1]
-		alert("_numero_"+document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[1].innerHTML+"_nom_"+document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[2].innerHTML+"_idD_"+document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[3].innerHTML);
-		
+			
 		document.getElementById("idUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[2].innerHTML;
 		document.getElementById("nomUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[3].innerHTML;
 		document.getElementById("lista").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[7].innerHTML;
