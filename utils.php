@@ -44,6 +44,12 @@ if($accion=="init"){
     
     
 }else if($accion=='modificaDatos'){
+    
+    $lista=$_SERVER['REQUEST_URI'];
+    $miindice= strpos($lista, "list=") ;
+    $lista=substr($lista, $miindice+5);
+    
+    
     // abrir en modo s�lo lectura
     echo "id__ModificaDatos_".$id;
     // "Definici�n" de la base de datos
