@@ -64,9 +64,9 @@ body {
 	}
 	function abrirModifica() { //CASF.[7.1.1]
 			
-		document.getElementById("idUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[2].innerHTML;
-		document.getElementById("nomUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[3].innerHTML;
-		document.getElementById("lista").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[7].innerHTML;
+		document.getElementById("idUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[2].innerText;
+		document.getElementById("nomUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[3].innerText;
+		document.getElementById("lista").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[7].innerText;
 		setSizePantalla();
 		setCentro();
 		
