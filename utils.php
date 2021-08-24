@@ -188,7 +188,7 @@ function obtieneRegistros( $conexion , $id)
                
                 $tabla.="<tr style='border-width: 2px' id='fila".$cont."'>";
                 $tabla.="<td nowrap>";
-                $tabla.="<input id='radioSel' name='radioSel'  type='radio' value='".$cont."' onclick='parent.selID(this.value)'>";
+                $tabla.="<input id='radioSel' name='radioSel'  type='radio' value='".$cont."' onclick='parent.setRadio(this.value)'>";
                 $tabla.="</td>";
                 $tabla.="<td nowrap>".$row[0]."</td>";
                 $tabla.="<td nowrap>".$row[1]."</td>";
@@ -229,7 +229,7 @@ function modificarAuth( $conexion, $id, $permisos)
 }
 function modificarDatos( $conexion, $id, $idUsuario, $nomUsuario, $lista)
 {   
-    $sql = "UPDATE CSTCONTROL SET IDUSUARIO='".$idUsuario."', NOMUSUARIO='".$nomUsuario."', LISTA='".$idUsuario."', USALISTA='S', NOMUSUARIO='".$idUsuario."' , RESETPASS='S' , FECHAMODIFICA=CURRENT TIMESTAMP    WHERE ID=".$id;
+    $sql = "UPDATE CSTCONTROL SET IDUSUARIO='".$idUsuario."', NOMUSUARIO='".$nomUsuario."', LISTA='".$idUsuario."', USALISTA='S', RESETPASS='S' , FECHAMODIFICA=CURRENT TIMESTAMP    WHERE ID=".$id;
     // Ejecutamos la consulta (se devolver� true o false):
     return pg_query( $conexion, $sql );
 }
