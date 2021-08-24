@@ -231,7 +231,7 @@ function modificarDatos( $conexion, $id, $idUsuario, $nomUsuario, $lista)
 {   
     echo "EntraMod".$idUsuario;
     echo "LISTA".$lista;
-    $sql = "UPDATE CSTCONTROL SET USUARIO=".$idUsuario.", NOMUSUARIO='".$nomUsuario."', LISTA='".$lista."', USALISTA='S', RESETPASS='S' , FECHAMODIFICA=CURRENT_TIMESTAMP    WHERE ID=".$id;
+    $sql = "UPDATE CSTCONTROL SET USUARIO='".$idUsuario."', NOMUSUARIO='".$nomUsuario."', LISTA='".$lista."', USALISTA='S', RESETPASS='S' , FECHAMODIFICA=CURRENT_TIMESTAMP    WHERE ID=".$id;
     echo "\n".$sql;
     // Ejecutamos la consulta (se devolver� true o false):
     return pg_query( $conexion, $sql );
