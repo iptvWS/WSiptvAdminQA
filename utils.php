@@ -53,7 +53,7 @@ if($accion=="init"){
         , "dbreil1d2te41c");
     //listarPersonas($conexion, $id);
     
-    $salida= modificarDatos($conexion, $id, $valor);
+    $salida= modificarDatos( $conexion, $id, $idUsuario, $nomUser, $lista);
     pg_close($conexion);
     echo "modifica";
     echo  $salida;
