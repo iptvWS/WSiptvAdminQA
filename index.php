@@ -66,7 +66,7 @@ body {
 			
 		document.getElementById("idUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[2].innerText;
 		document.getElementById("nomUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[3].innerText;
-		document.getElementById("lista").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[7].innerText;
+		document.getElementById("lista").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[8].innerText;
 		setSizePantalla();
 		setCentro();
 		

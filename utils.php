@@ -204,7 +204,7 @@ function obtieneRegistros( $conexion , $id)
                 $tabla.="<td nowrap><select id='".$cont."' onchange='parent.modificaPermisos (this.id, this.value);'>";
                 $tabla.="<option value='S' ".($row[5]=="S"?"selected":"").">S</option><option value='N' ".($row[5]=="N"?"selected":"").">N</option>";
                 $tabla.="</select></td>";
-                $tabla.="<td nowrap><select id='".$cont."' onchange='parent.resetPass (this.id, this.value);'>";
+                $tabla.="<td nowrap><select name='pass' id='".$cont."' onchange='parent.resetPass (this.id, this.value);'>";
                 $tabla.="<option value='S' ".($row[6]=="S"?"selected":"").">S</option><option value='N' ".($row[6]=="N"?"selected":"").">N</option>";
                 $tabla.="</select></td>";
                 $tabla.="<td nowrap style='display:none ;'>".$row[7]."</td>";
