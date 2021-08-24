@@ -158,7 +158,7 @@ function listarPersonas( $conexion , $id)
 
 function obtieneRegistros( $conexion , $id)
 {
-    $sql = "SELECT ID, USUARIO, NOMUSUARIO, IDROKU, IP , PERMISOS, LISTA, RESETPASS FROM CSTCONTROL WHERE ID>5 ORDER BY ID";
+    $sql = "SELECT ID, USUARIO, NOMUSUARIO, IDROKU, IP , PERMISOS, RESETPASS, LISTA FROM CSTCONTROL WHERE ID>5 ORDER BY ID";
     
    // <td > ID Usuario </td>
    // <td > Usuario </td>
