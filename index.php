@@ -51,8 +51,8 @@ body {
 		window.open("utils.php?act=init", "frameDet");
 	}
 	function modificaDatos(id){
-		alert("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value);
-		window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value, "frameDet");
+		Console.log("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value);
+		window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
 		alert("Permisos modificados");
 		window.open("utils.php?act=init", "frameDet");
 	}
