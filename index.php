@@ -436,7 +436,7 @@ body {
 			</td>
 			<td >
 			
-			<input type="button" onclick="alert('Aceptar');" value="Aceptar">
+			<input type="button" onclick="modificaDatos()" value="Aceptar">
 			<input type="button" onclick="cierraDiv();" value="Cancelar">
 			</td>
 			<td >  
