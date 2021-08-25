@@ -374,11 +374,11 @@ body {
 <!--   </div> -->
 </font>
 <font color="white">
-<div id="idModifica" style="left: 0; top: 0; position: absolute; visibility:hidden;background-color:#330b2d;" >
-<table border="0" >
-<tbody>	
-	<tr>
-		<td >
+<div id="idModifica" align="center" style="left: 0; top: 0; position: absolute; visibility:hidden;background-color:#330b2d;" >
+<table border="0" align="center">
+<tbody align="center">	
+	<tr align="center">
+		<td align="center">
 			<div id="modifica" style=" left: 0; top: 0; position: fixed;border: 1px solid white;" >
 	  <table  border="0" cellpadding="1" cellspacing="0">
 		<tr>
