@@ -86,8 +86,10 @@ body {
 		document.getElementById("idModifica").style.opacity = '0.1';
 		document.getElementById("idModifica").style.visibility = 'visible';
 		
+		//alert(document.getElementById("banner").style.offsetHeight);
+		
 		document.getElementById("modifica").style.left = xCentro - (500)+"px";  
-		document.getElementById("modifica").style.top  = (yCentro+document.getElementById("banner").style.offsetTop) - (25)+"px"; 
+		document.getElementById("modifica").style.top  = (yCentro+document.getElementById("banner").style.offsetHeight) - (25)+"px"; 
 		document.getElementById("modifica").style.display = '';
 		document.getElementById("idModifica").style.opacity = '0.9';
 		document.getElementById("idModifica").style.visibility = 'visible';
