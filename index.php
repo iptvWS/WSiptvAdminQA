@@ -88,7 +88,7 @@ body {
 		
 		
 		
-		document.getElementById("modifica").style.left = (xCentro/2) "px";  
+		document.getElementById("modifica").style.left = xCentro - (400)+"px";  
 		document.getElementById("modifica").style.top  = (yCentro) - (25)+"px"; 
 		document.getElementById("modifica").style.display = '';
 		document.getElementById("idModifica").style.opacity = '0.9';
