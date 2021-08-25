@@ -223,8 +223,8 @@ body {
 			</td>
 			<td    >
 				    <h1>Mantenimiento y Bloqueo de Dispositivos</h1>
-    				<p>Seleccione el registro para editar o seleccione estatus de bloqueo</p> 
-					<p align="right"><img id='agrega' src='mas.png' width='20px' height='20px' style='vertical-align: top' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal&nbsp;&nbsp;&nbsp;</p>
+    				<p>Seleccione el registro para editar o seleccione estatus de bloqueo <img id='agrega' src='mas.png' width='20px' height='20px' style='vertical-align: top' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal&nbsp;&nbsp;&nbsp;</p> 
+					
 			
 				</td>
 				
