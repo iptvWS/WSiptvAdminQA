@@ -379,7 +379,7 @@ body {
 <tbody>	
 	<tr>
 		<td >
-			<div id="modifica" style=" left: 0; top: 0; position: absolute;border: 1px solid white;" >
+			<div id="modifica" style=" left: 0; top: 0; position: fixed;border: 1px solid white;" >
 	  <table  border="0" cellpadding="1" cellspacing="0">
 		<tr>
 			<td colspan="5" style="align-content: center;" align="center">
