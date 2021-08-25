@@ -166,7 +166,7 @@ function obtieneRegistros( $conexion , $id)
    // <td > IP de conexión </td>
    // <td > Permisos </td>
     $tabla="<html><font color='white'><body ><table id ='detalleUsuarios' style='color: white;' width='100%' height='100%'  cellpadding='1' cellspacing='1' border='1' style='border: 1px solid white;' > ";
-    $tabla.="<tr id='encabezado' style='border-width: 2px' id='fila0'>	<td nowrap> Sel </td><td nowrap> ID Canal </td> <td nowrap> ID Usuario </td> <td nowrap> Nombre Usuario </td><td nowrap> ID de dispositivo </td><td nowrap> IP de conexi&oacute;n </td><td nowrap> Habilitado </td> <td nowrap> Reset Lista </td> <td id='cdLista' style='display:none ; width: 0px' width='0px' > </td>  </tr>";
+    $tabla.="<tr id='encabezado' style='border-width: 2px' id='fila0'>	<td nowrap> Sel </td><td nowrap> ID Canal </td> <td nowrap> ID Usuario </td> <td nowrap> Nombre Usuario </td><td nowrap> ID de dispositivo </td><td nowrap> IP de conexi&oacute;n </td><td nowrap align='center'> Habilitado </td> <td nowrap align='center'> Reset Lista </td> <td id='cdLista' style='display:none ; width: 0px' width='0px' > </td>  </tr>";
   
     $cont=0;
     // Ejecutar la consulta:
@@ -201,10 +201,10 @@ function obtieneRegistros( $conexion , $id)
                 $tabla.="<td nowrap>".$row[2]."</td>";
                 $tabla.="<td nowrap>".$row[3]."</td>";
                 $tabla.="<td nowrap>".$row[4]."</td>";
-                $tabla.="<td nowrap><select id='".$cont."' onchange='parent.modificaPermisos (this.id, this.value);'>";
+                $tabla.="<td nowrap align='center'><select id='".$cont."' onchange='parent.modificaPermisos (this.id, this.value);'>";
                 $tabla.="<option value='S' ".($row[5]=="S"?"selected":"").">S</option><option value='N' ".($row[5]=="N"?"selected":"").">N</option>";
                 $tabla.="</select></td>";
-                $tabla.="<td nowrap><select name='pass' id='pass".$cont."' onchange='parent.resetPass (this.id, this.value);'>";
+                $tabla.="<td nowrap align='center'><select disabled name='pass' id='pass".$cont."' onchange='parent.resetPass (this.id, this.value);'>";
                 $tabla.="<option value='S' ".($row[6]=="S"?"selected":"").">S</option><option value='N' ".($row[6]=="N"?"selected":"").">N</option>";
                 $tabla.="</select></td>";
                 $tabla.="<td nowrap style='display:none ;'>".$row[7]."</td>";
