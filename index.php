@@ -50,6 +50,11 @@ body {
 		alert("Permisos modificados");
 		window.open("utils.php?act=init", "frameDet");
 	}
+	function resetPass(id,valor){
+		window.open("utils.php?act=modificaPass&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
+		alert("Permisos modificados");
+		window.open("utils.php?act=init", "frameDet");
+	}
 	function modificaDatos(id){
 		window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
 		alert("Datos modificados");
