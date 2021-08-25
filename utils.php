@@ -221,10 +221,10 @@ function obtieneRegistros( $conexion , $id)
                 $tabla.="<td nowrap align='center'><select id='".$cont."' onchange='parent.modificaPermisos (this.id, this.value);'>";
                 $tabla.="<option value='S' ".($row[5]=="S"?"selected":"").">S</option><option value='N' ".($row[5]=="N"?"selected":"").">N</option>";
                 $tabla.="</select></td>";
-                $tabla.="<td nowrap align='center'><select  name='pass' id='pass".$cont."' onchange='parent.resetPass (this.id, this.value);'>";
+                $tabla.="<td nowrap align='center'><select  name='pass' id='".$cont."' onchange='parent.resetPass (this.id, this.value);'>";
                 $tabla.="<option value='S' ".($row[6]=="S"?"selected":"").">S</option><option value='N' ".($row[6]=="N"?"selected":"").">N</option>";
                 $tabla.="</select></td>";
-                $tabla.="<td nowrap align='center'><select  name='resl' id='resl".$cont."' onchange='parent.resetPass (this.id, this.value);'>";
+                $tabla.="<td nowrap align='center'><select  name='resl' id='".$cont."' onchange='parent.resetPass (this.id, this.value);'>";
                 $tabla.="<option value='S' ".($row[7]=="S"?"selected":"").">S</option><option value='N' ".($row[7]=="N"?"selected":"").">N</option>";
                 $tabla.="</select></td>";
                 $tabla.="<td nowrap style='display:none ;'>".$row[8]."</td>";
