@@ -222,15 +222,23 @@ body {
 			
 			</td>
 			<td    >
+			<table>
+			<tr>
+			<td>
 				    <h1>Mantenimiento y Bloqueo de Dispositivos</h1>
     				<p>Seleccione el registro para editar o seleccione estatus de bloqueo</p>
 					
 			
 				</td>
+			</tr>
+			<tr>
 				<td  align="right" height="10px" style='vertical-align: top' >
 				  <img id='agrega' src='mas.png' width='20px' height='20px' style='vertical-align: top' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal&nbsp;&nbsp;&nbsp;
 				</td>
-				
+			
+			</tr>
+			</table>	
+			</td>
 		</tr>
 		
 			
