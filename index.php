@@ -52,7 +52,7 @@ body {
 	}
 	function resetPass(id,valor){
 		window.open("utils.php?act=modificaPass&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
-		alert("Permisos modificados");
+		alert("Password Reseteado modificados");
 		window.open("utils.php?act=init", "frameDet");
 	}
 	function modificaDatos(id){
