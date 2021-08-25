@@ -86,7 +86,7 @@ body {
 		document.getElementById("idModifica").style.opacity = '0.1';
 		document.getElementById("idModifica").style.visibility = 'visible';
 		
-		alert("__________ ___"document.getElementById("banner").style.height+"__"+yCentro);
+		alert("__________ ___"+document.getElementById("banner").style.height+"__"+yCentro);
 		
 		document.getElementById("modifica").style.left = xCentro - (500)+"px";  
 		document.getElementById("modifica").style.top  = (yCentro+170) - (25)+"px"; 
