@@ -88,7 +88,8 @@ body {
 		
 		
 		
-		
+		document.getElementById("modifica").style.left = xCentro - (400)+"px";  
+		document.getElementById("modifica").style.top  = (yCentro) - (25)+"px"; 
 		document.getElementById("modifica").style.display = '';
 		document.getElementById("idModifica").style.opacity = '0.9';
 		document.getElementById("idModifica").style.visibility = 'visible';
@@ -374,12 +375,12 @@ body {
 </font>
 <font color="white">
 <div id="idModifica" align="center" style="left: 0; top: 0; position: absolute; visibility:hidden;background-color:#330b2d;" >
-<table border="0" align="center" style="align-content: center;">
-<tbody align="center" style="align-content: center;">	
-	<tr align="center" style="align-content: center;">
-		<td align="center" style="align-content: center;">
-			<div id="modifica" style=" left: 0; top: 0; position: fixed;border: 1px solid white;align-content: center;" >
-	  <table  border="0" cellpadding="1" cellspacing="0" style="align-content: center;">
+<table border="0" align="center">
+<tbody align="center">	
+	<tr align="center">
+		<td align="center">
+			<div id="modifica" style=" left: 0; top: 0; position: fixed;border: 1px solid white;" >
+	  <table  border="0" cellpadding="1" cellspacing="0">
 		<tr>
 			<td colspan="5" style="align-content: center;" align="center">
 				Edici&oacute;n de usuario
