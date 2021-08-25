@@ -230,16 +230,16 @@ body {
 				
 		</tr>
 		<tr height="10px"  >
+			<td   width="220px" height="10px"  >
+			
+			</td>
+			<td colspan="2" align="right" height="10px"  >
+				   <tr   >
 			<td   width="220px"  >
 			
 			</td>
-			<td colspan="2" align="right"  >
-				   <tr height="80%"  >
-			<td   width="220px"  >
-			
-			</td>
-			<td colspan="2"  align="right" >
-				  <img id='agrega' src='mas.png' width='20px' height='20px' style='vertical-align: center' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal
+			<td colspan="2"  align="right" height="10px" >
+				  <img id='agrega' src='mas.png' width='20px' height='20px' style='vertical-align: center' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal&nbsp;&nbsp;&nbsp;
 				</td>
 				
 		</tr>
