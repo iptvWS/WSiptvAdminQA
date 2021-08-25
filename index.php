@@ -81,7 +81,7 @@ body {
 		setCentro();
 		
 		document.getElementById("idModifica").style.width = xW + 'px';
-		document.getElementById("idModifica").style.height = document.offsetHeight + 'px';
+		document.getElementById("idModifica").style.height = document.body.offsetHeight + 'px';
 		document.getElementById("idModifica").style.backgroud = '#11ffee00';
 		document.getElementById("idModifica").style.opacity = '0.1';
 		document.getElementById("idModifica").style.visibility = 'visible';
