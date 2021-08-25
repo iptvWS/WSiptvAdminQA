@@ -227,8 +227,27 @@ body {
 					
 			
 				</td>
+				
 		</tr>
-		<img id='agrega' src='mas.png' width='20px' height='20px' style='' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal
+		<tr height="10px"  >
+			<td   width="220px"  >
+			
+			</td>
+			<td colspan="2" align="right"  >
+				   <tr height="80%"  >
+			<td   width="220px"  >
+			
+			</td>
+			<td colspan="2"   >
+				  <img id='agrega' src='mas.png' width='20px' height='20px' style='' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal
+				</td>
+				
+		</tr>
+			
+				</td>
+				
+		</tr>
+		
 		
 		
 		<tr height="80%" >
