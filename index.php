@@ -221,7 +221,7 @@ body {
 			<td   width="220px"  >
 			
 			</td>
-			<td    >
+			<td    colspan="2">
 			<table>
 			<tr>
 			<td>
