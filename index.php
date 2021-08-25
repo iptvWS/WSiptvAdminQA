@@ -87,7 +87,7 @@ body {
 		document.getElementById("idModifica").style.visibility = 'visible';
 		
 		document.getElementById("modifica").style.left = xCentro - (500)+"px";  
-		document.getElementById("modifica").style.top  = yCentro - (25)+"px"; 
+		document.getElementById("modifica").style.top  = "170px"; 
 		document.getElementById("modifica").style.display = '';
 		document.getElementById("idModifica").style.opacity = '0.9';
 		document.getElementById("idModifica").style.visibility = 'visible';
@@ -139,7 +139,7 @@ body {
 			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Seleccione permisos')" style="color: red">Bloqueo de Usuarios</a><td>
 			 		</tr>
 			 		<tr height="50px">
-			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Seleccione un registro')" style="color: blue">Edición</a><td>
+			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Seleccione un registro')" style="color: blue">Edici&oacute;n</a><td>
 			 		</tr>
 			 		<tr height="50px">
 			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#CSTV2" style="color: red"></a><td>
@@ -381,7 +381,7 @@ body {
 	  <table  border="0" cellpadding="1" cellspacing="0">
 		<tr>
 			<td colspan="5" style="align-content: center;" align="center">
-				Edición de usuario
+				Edici&oacute;n de usuario
 			</td>
 			
 		</tr>
