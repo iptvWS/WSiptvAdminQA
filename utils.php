@@ -60,6 +60,23 @@ if($accion=="init"){
     
     
     
+}else if($accion=='modificaLista'){
+    // abrir en modo s�lo lectura
+    echo "id___".$id;
+    // "Definici�n" de la base de datos
+    $conexion = null;
+    $conexion = conectar_PostgreSQL("hyssxqqsenyzws", "f7393c156cc3f0fd9aa4c73673142c54a98a837bdf43fa73dc2392b55b176719"
+        ,  "ec2-52-0-67-144.compute-1.amazonaws.com"
+        , "dbreil1d2te41c");
+    //listarPersonas($conexion, $id);
+    
+    $salida= modificarLista($conexion, $id, $valor);
+    pg_close($conexion);
+    echo "modifica";
+    echo  $salida;
+    
+    
+    
 }else if($accion=='modificaDatos'){
     
     $lista=$_SERVER['REQUEST_URI'];
@@ -221,7 +238,7 @@ function obtieneRegistros( $conexion , $id)
                 $tabla.="<td nowrap align='center'><select id='".$cont."' onchange='parent.modificaPermisos (this.id, this.value);'>";
                 $tabla.="<option value='S' ".($row[5]=="S"?"selected":"").">S</option><option value='N' ".($row[5]=="N"?"selected":"").">N</option>";
                 $tabla.="</select></td>";
-                $tabla.="<td nowrap align='center'><select  name='pass' id='".$cont."' onchange='parent.resetPass (this.id, this.value);'>";
+                $tabla.="<td nowrap align='center'><select  name='pass' id='".$cont."' onchange='parent.resetLista (this.id, this.value);'>";
                 $tabla.="<option value='S' ".($row[6]=="S"?"selected":"").">S</option><option value='N' ".($row[6]=="N"?"selected":"").">N</option>";
                 $tabla.="</select></td>";
                 $tabla.="<td nowrap align='center'><select  name='resl' id='".$cont."' onchange='parent.resetPass (this.id, this.value);'>";
@@ -258,6 +275,12 @@ function modificarAuth( $conexion, $id, $permisos)
 function modificarPass( $conexion, $id, $pass)
 {
     $sql = "UPDATE CSTCONTROL SET RESETPASS='".$pass."' WHERE ID=".$id;
+    // Ejecutamos la consulta (se devolver� true o false):
+    return pg_query( $conexion, $sql );
+}
+function modificarLista( $conexion, $id, $pass)
+{
+    $sql = "UPDATE CSTCONTROL SET USALISTA='".$pass."' WHERE ID=".$id;
     // Ejecutamos la consulta (se devolver� true o false):
     return pg_query( $conexion, $sql );
 }
