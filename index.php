@@ -229,7 +229,7 @@ body {
 				</td>
 				
 		</tr>
-		<tr height="10px"  >
+		<tr height="10px" style="vertical-align: top;" >
 			<td   width="220px" height="10px"  >
 			
 			</td>
@@ -238,8 +238,8 @@ body {
 			<td   width="220px"  >
 			
 			</td>
-			<td colspan="2"  align="right" height="10px" style='vertical-align: center' >
-				  <img id='agrega' src='mas.png' width='20px' height='20px' style='vertical-align: center' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal&nbsp;&nbsp;&nbsp;
+			<td colspan="2"  align="right" height="10px" style='vertical-align: top' >
+				  <img id='agrega' src='mas.png' width='20px' height='20px' style='vertical-align: top' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal&nbsp;&nbsp;&nbsp;
 				</td>
 				
 		</tr>
