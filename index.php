@@ -60,17 +60,26 @@ body {
 		alert("Password Reseteado modificados");
 		window.open("utils.php?act=init", "frameDet");
 	}
-	function modificaDatos(id){
-		window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
+	function modificaDatos(btn){
+		if(btn.value="Aceptar"){
+			window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
+		}else{
+		   	window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
+		}
 		alert("Datos modificados");
 		cierraDiv();
 		window.open("utils.php?act=init", "frameDet");
+		
 	}
 	function selID(id){
 		alert("Funcionalidad no disponible");
 	}
 	function setRadio(id){
 		valRadio=id;
+	}
+	function generaCanal(){
+		alert("Debe Generar canal");
+		abrirGenera();
 	}
 	function abrirModifica() { //CASF.[7.1.1]
 			
@@ -93,7 +102,32 @@ body {
 		document.getElementById("modifica").style.display = '';
 		document.getElementById("idModifica").style.opacity = '0.9';
 		document.getElementById("idModifica").style.visibility = 'visible';
+	
 	}
+
+	function abrirGenera() { //CASF.[7.1.1]
+			
+		document.getElementById("idUsuario").value="";
+		document.getElementById("nomUsuario").value="";
+		document.getElementById("lista").value="";
+		setSizePantalla();
+		setCentro();
+		
+		document.getElementById("idModifica").style.width = xW + 'px';
+		document.getElementById("idModifica").style.height = document.body.offsetHeight + 'px';
+		document.getElementById("idModifica").style.backgroud = '#11ffee00';
+		document.getElementById("idModifica").style.opacity = '0.1';
+		document.getElementById("idModifica").style.visibility = 'visible';
+		
+		
+		
+		document.getElementById("modifica").style.left = xCentro - (400)+"px";  
+		document.getElementById("modifica").style.top  = (yCentro) - (25)+"px"; 
+		document.getElementById("modifica").style.display = '';
+		document.getElementById("idModifica").style.opacity = '0.9';
+		document.getElementById("idModifica").style.visibility = 'visible';
+	}	
+	
 	function cierraDiv(){
 		document.getElementById("idModifica").style.visibility = 'hidden';
 		document.getElementById("idModifica").style.visibility = 'hidden';
@@ -144,7 +178,7 @@ body {
 			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Seleccione un registro')" style="color: blue">Edici&oacute;n</a><td>
 			 		</tr>
 			 		<tr height="50px">
-			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#CSTV2" style="color: red"></a><td>
+			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Levanta Genera')"  style="color: red">Generar Usuario</a><td>
 			 		</tr>
 			 		<tr height="50px">
 			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#CSTV" style="color: blue"></a><td>
@@ -448,7 +482,7 @@ body {
 			</td>
 			<td >
 			
-			<input type="button" onclick="modificaDatos()" value="Aceptar">
+			<input type="button" onclick="modificaDatos(this.value)" id="btnAceptar" value="Aceptar">
 			<input type="button" onclick="cierraDiv();" value="Cancelar">
 			</td>
 			<td >  
