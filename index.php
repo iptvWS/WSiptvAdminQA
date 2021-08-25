@@ -47,23 +47,24 @@ body {
 	var valRadio=-1;
 	function modificaPermisos(id,valor){
 		window.open("utils.php?act=modifica&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
-		alert("Permisos modificados");
+		alert("Permisos Modificados");
 		window.open("utils.php?act=init", "frameDet");
 	}
 	function resetPass(id,valor){
 		window.open("utils.php?act=modificaPass&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
-		alert("Password Reseteado modificados");
+		alert("Password de Control Parental Reiniciado");
 		window.open("utils.php?act=init", "frameDet");
 	}
 	function resetLista(id,valor){
 		window.open("utils.php?act=modificaLista&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
-		alert("Password Reseteado modificados");
+		alert("La Lista se Cargara en el Siguiente Inicio de Sesion");
 		window.open("utils.php?act=init", "frameDet");
 	}
 	function modificaDatos(btn){
 		if(btn.value="Aceptar"){
 			window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
 		}else{
+			alert("id____________________"+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML);
 		   	window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
 		}
 		alert("Datos modificados");
@@ -86,6 +87,7 @@ body {
 		document.getElementById("idUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[2].innerText;
 		document.getElementById("nomUsuario").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[3].innerText;
 		document.getElementById("lista").value=document.frameDet.document.getElementById("detalleUsuarios").rows[valRadio].cells[9].innerText;
+		document.getElementById("btnAceptar").value="Aceptar";
 		setSizePantalla();
 		setCentro();
 		
@@ -110,6 +112,9 @@ body {
 		document.getElementById("idUsuario").value="";
 		document.getElementById("nomUsuario").value="";
 		document.getElementById("lista").value="";
+		
+		document.getElementById("btnAceptar").value="Generar";
+		
 		setSizePantalla();
 		setCentro();
 		
