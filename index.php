@@ -179,7 +179,7 @@ body {
 			 		</tr>
 			 		<tr height="50px">
 			 		 
-			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Levanta Genera')"  style="color: red"><img id='agrega' src='mas.png' width='20px' height='20px' style='' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal</a><td>
+			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Levanta Genera')"  style="color: red">Generar Usuario</a><td>
 			 		</tr>
 			 		<tr height="50px">
 			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#CSTV" style="color: blue"></a><td>
@@ -228,7 +228,7 @@ body {
 			
 				</td>
 		</tr>
-		
+		<img id='agrega' src='mas.png' width='20px' height='20px' style='' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal
 		
 		
 		<tr height="80%" >
