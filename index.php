@@ -87,7 +87,7 @@ body {
 		document.getElementById("idModifica").style.visibility = 'visible';
 		
 		document.getElementById("modifica").style.left = xCentro - (500)+"px";  
-		document.getElementById("modifica").style.top  = document.getElementById("banner").innerHeight; 
+		document.getElementById("modifica").style.top  = document.getElementById("banner").offsetTop; 
 		document.getElementById("modifica").style.display = '';
 		document.getElementById("idModifica").style.opacity = '0.9';
 		document.getElementById("idModifica").style.visibility = 'visible';
