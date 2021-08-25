@@ -238,8 +238,8 @@ body {
 			<td   width="220px"  >
 			
 			</td>
-			<td colspan="2"   >
-				  <img id='agrega' src='mas.png' width='20px' height='20px' style='' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal
+			<td colspan="2"  align="right" >
+				  <img id='agrega' src='mas.png' width='20px' height='20px' style='vertical-align: center' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal
 				</td>
 				
 		</tr>
