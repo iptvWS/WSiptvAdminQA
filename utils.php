@@ -254,7 +254,7 @@ function obtieneRegistros( $conexion , $id)
             $tabla.="</tr>";
             //echo "<p>No se encontraron personas</p>";
         }
-        $tabla.="<img id='agrega' src='mas.png' width='20px' height='20px' style='' conclick='parent.generaCanal()' alt=''/> Generar nuevo canal ";
+        $tabla.="";
         
     }
    
