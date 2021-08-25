@@ -86,7 +86,7 @@ body {
 		document.getElementById("idModifica").style.opacity = '0.1';
 		document.getElementById("idModifica").style.visibility = 'visible';
 		
-		alert(document.getElementById("banner").style.height+"__"+yCentro);
+		alert("__________ ___"document.getElementById("banner").style.height+"__"+yCentro);
 		
 		document.getElementById("modifica").style.left = xCentro - (500)+"px";  
 		document.getElementById("modifica").style.top  = (yCentro+170) - (25)+"px"; 
@@ -100,10 +100,10 @@ body {
 	}
 	function setCentro(){//CASF.[7.1.1]
 		if (window.innerWidth){ 
-			alert("if"+window.innerWidth+"_"+window.innerHeight);
+			
 			setCentroXY(parseInt(window.innerWidth / 2), parseInt(window.innerHeight / 2));
 		} else if(document.body.clientWidth){
-		alert("if else");
+		
 			setCentroXY(parseInt(document.body.clientWidth / 2), parseInt(document.body.clientHeight / 2));
 		}
 	}	
