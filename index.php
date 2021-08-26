@@ -379,10 +379,10 @@ body {
 			
 			</td>
 			<td colspan="2" >
-				    <h1>Para recibir el canal </h1>
-				    <p>Para el instalador y apoyo es necesario que te unas a </p>
+				    <h1>Soporte Tecnico</h1>
+				    <p>Para soporte y apoyo es necesario que te unas a </p>
     				<a href="https://t.me/cs_IPTV">Nuestro grupo de telegram</a>
-    				<p>Mandar tu captura de suscripcion al canal de youtube</p>
+    				<p>Recuerda apoyar nuestro canal de youtube</p>
     				<p>Y apoyar dando click en la publicidad</p>
 				<br>
 					<br>
