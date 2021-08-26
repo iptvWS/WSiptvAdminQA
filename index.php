@@ -191,14 +191,17 @@ body {
 			 			<td ><td>
 			 		</tr>
 			 		<tr height="50px">
+			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#CSTV" style="color: blue"></a><td>
+			 		</tr>
+			 		<tr height="50px">
 			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Seleccione permisos')" style="color: red">Bloqueo de Usuarios</a><td>
 			 		</tr>
 			 		<tr height="50px">
-			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Seleccione un registro')" style="color: blue">Edici&oacute;n</a><td>
+			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Seleccione un registro')" style="color: blue">Editar Usuario</a><td>
 			 		</tr>
 			 		<tr height="50px">
 			 		 
-			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Presionar + Generar Canal')"  style="color: red">Generar Canal</a><td>
+			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Presionar + Generar Canal')"  style="color: red">Generar Canales</a><td>
 			 		</tr>
 			 		<tr height="50px">
 			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#CSTV" style="color: blue"></a><td>
