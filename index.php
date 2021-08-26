@@ -71,7 +71,7 @@ body {
 		}else{
 			
 			
-		   	window.open("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+document.getElementById("nomUsuario").value+"&lista="+document.getElementById("list").value,  "frameDet");
+		   	window.open("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value,  "frameDet");
 		   	alert("Canal Generado");
 			cierraDiv();
 			window.open("utils.php?act=init", "frameDet");
