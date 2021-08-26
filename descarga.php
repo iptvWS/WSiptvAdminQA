@@ -7,6 +7,9 @@ $lista = $_GET["list"]; // le faltaba esta instrucción antes del if
 $nomusr = $_GET["nomusr"]; // le faltaba esta instrucción antes del if
 
 echo "entra_".$accion;
+$lista=$_SERVER['REQUEST_URI'];
+$miindice= strpos($lista, "list=") ;
+$lista=substr($lista, $miindice+5);
 
 
 $consecutivo=0;
@@ -15,9 +18,6 @@ echo  "id".$consecutivo;
 modificaArchivo($consecutivo);
 
 if($accion=="descarga"){
-    $lista=$_SERVER['REQUEST_URI'];
-    $miindice= strpos($lista, "list=") ;
-    $lista=substr($lista, $miindice+5);
     
     $zip = new ZipArchive;
     $fileToModify = 'manifest';

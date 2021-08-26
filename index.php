@@ -70,7 +70,7 @@ body {
 			window.open("utils.php?act=init", "frameDet");
 		}else{
 			
-			
+			console.log("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value);
 		   	window.open("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value,  "frameDet");
 		   	alert("Canal Generado");
 			cierraDiv();
