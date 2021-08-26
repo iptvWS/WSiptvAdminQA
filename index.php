@@ -85,8 +85,7 @@ body {
 		valRadio=id;
 	}
 	function generaCanal(){
-		alert("Presione + Generar Canal");
-		
+		abrirGenera();
 	}
 	function abrirModifica() { //CASF.[7.1.1]
 			
@@ -190,7 +189,7 @@ body {
 			 		</tr>
 			 		<tr height="50px">
 			 		 
-			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Levanta Genera')"  style="color: red">Generar Usuario</a><td>
+			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="alert('Presionar + Generar Canal')"  style="color: red">Generar Canal</a><td>
 			 		</tr>
 			 		<tr height="50px">
 			 			<td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#CSTV" style="color: blue"></a><td>
