@@ -48,26 +48,26 @@ body {
 	var uri="";
 	
 	function modificaPermisos(id,valor){
-		window.open("<?php echo "utils.php?";?>+"act=modifica&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
+		window.open("<?php echo "utils.php?";?>"+"act=modifica&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
 		alert("Permisos Modificados");
-		window.open("<?php echo "utils.php?act=init";?>, "frameDet");
+		window.open("<?php echo "utils.php?act=init";?>", "frameDet");
 	}
 	function resetPass(id,valor){
-		window.open("<?php echo "utils.php?";?>+"act=modificaPass&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
+		window.open("<?php echo "utils.php?";?>"+"act=modificaPass&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
 		alert("Password de Control Parental Reiniciado");
-		window.open("<?php echo "utils.php?act=init";?>, "frameDet");
+		window.open("<?php echo "utils.php?act=init";?>", "frameDet");
 	}
 	function resetLista(id,valor){
-		window.open("<?php echo "utils.php?";?>+"act=modificaLista&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
+		window.open("<?php echo "utils.php?";?>"+"act=modificaLista&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
 		alert("La Lista se Cargara en el Siguiente Inicio de Sesion");
-		window.open("<?php echo "utils.php?act=init";?>, "frameDet");
+		window.open("<?php echo "utils.php?act=init";?>", "frameDet");
 	}
 	function modificaDatos(btn){
 		if(btn=="Aceptar"){
-			window.open("<?php echo "utils.php?";?>+"act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
+			window.open("<?php echo "utils.php?";?>"+"act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
 			alert("Datos modificados con Exito");
 			cierraDiv();
-			window.open("<?php echo "utils.php?act=init";?>, "frameDet");
+			window.open("<?php echo "utils.php?act=init";?>", "frameDet");
 		}else{
 			
 			if(document.getElementById("idUsuario").value=="" || document.getElementById("nomUsuario").value=="" || document.getElementById("lista").value==""){
@@ -79,7 +79,7 @@ body {
     			window.open("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value,  "frameDet");
     		   	alert("Canal Generado, Revise sus descargas");
     			cierraDiv();
-    			window.open("<?php echo "utils.php?act=init";?>, "frameDet");
+    			window.open("<?php echo "utils.php?act=init";?>", "frameDet");
 			}
 			
 		}
