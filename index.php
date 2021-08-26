@@ -70,9 +70,11 @@ body {
 			window.open("utils.php?act=init", "frameDet");
 		}else{
 			
-			alert("id____________________");
-		   	window.open("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+ocument.getElementById("nomUsuario").value+"&lista="+ocument.getElementById("lista").value,  "frameDet");
-		   	
+			
+		   	window.open("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+ocument.getElementById("nomUsuario").value+"&lista="+document.getElementById("lista").value,  "frameDet");
+		   	alert("Canal Generado");
+			cierraDiv();
+			window.open("utils.php?act=init", "frameDet");
 		}
 		
 			
