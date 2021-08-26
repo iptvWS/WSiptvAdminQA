@@ -64,8 +64,9 @@ body {
 		if(btn.value="Aceptar"){
 			window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
 		}else{
+			
 			alert("id____________________"+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML);
-		   	window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
+		   	window.open(<?php echo "https://csm3u.herokuapp.com/descarga.php?act=descarga&usr=Prueba11"?>, "frameDet");
 		}
 		alert("Datos modificados");
 		cierraDiv();
