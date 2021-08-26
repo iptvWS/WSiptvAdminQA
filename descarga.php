@@ -15,6 +15,10 @@ echo  "id".$consecutivo;
 modificaArchivo($consecutivo);
 
 if($accion=="descarga"){
+    $lista=$_SERVER['REQUEST_URI'];
+    $miindice= strpos($lista, "list=") ;
+    $lista=substr($lista, $miindice+5);
+    
     $zip = new ZipArchive;
     $fileToModify = 'manifest';
     if ($zip->open('1f708c583476_ea4b6387.zip') === TRUE) {

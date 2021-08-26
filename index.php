@@ -71,7 +71,7 @@ body {
 		}else{
 			
 			alert("id____________________");
-		   	window.open("<?php echo "descarga.php?act=descarga&usr=Prueba12";?>",  "frameDet");
+		   	window.open("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+ocument.getElementById("nomUsuario").value+"&lista="+ocument.getElementById("lista").value,  "frameDet");
 		   	
 		}
 		
