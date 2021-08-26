@@ -233,7 +233,7 @@ function obtieneRegistros( $conexion , $id)
                 $tabla.="<td nowrap>".$row[0]."</td>";
                 $tabla.="<td nowrap>".$row[1]."</td>";
                 $tabla.="<td nowrap>".$row[2]."</td>";
-                $tabla.="<td nowrap>".$row[3]."</td>";
+                $tabla.="<td nowrap>".is_null($row[3])?"":(strlen($row[3])>17?(substr(($row[3]),0,19)):"")."</td>";
                 $tabla.="<td nowrap>".$row[4]."</td>";
                 $tabla.="<td nowrap align='center'><select id='".$cont."' onchange='parent.modificaPermisos (this.id, this.value);'>";
                 $tabla.="<option value='S' ".($row[5]=="S"?"selected":"").">S</option><option value='N' ".($row[5]=="N"?"selected":"").">N</option>";
