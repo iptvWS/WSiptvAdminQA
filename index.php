@@ -45,7 +45,7 @@ body {
 <script data-ad-client="ca-pub-9702888902505497" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script type="text/javascript">
 	var valRadio=-1;
-	var uri="<?php echo "https://csm3u.herokuapp.com//descarga.php?act=descarga/&usr=Prueba11";?>";
+	var uri="<?php echo "https://wtsplay.herokuapp.com/descarga.php?act=descarga&usr=Prueba11";?>";
 	
 	function modificaPermisos(id,valor){
 		window.open("utils.php?act=modifica&valor="+valor+"&id="+document.frameDet.document.getElementById("fila"+id).cells[1].innerHTML, "frameDet");
