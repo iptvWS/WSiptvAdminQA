@@ -388,7 +388,7 @@ body {
 			</td>
 			<td colspan="2" >
 				    <h1>Soporte Tecnico</h1>
-				    <p>Para soporte y apoyo es necesario que te unas a </p>
+				    <p>Para soporte y apoyo es necesario que vayas a </p>
     				<a href="https://t.me/cs_IPTV">Nuestro grupo de telegram</a>
     				<p>Recuerda apoyar nuestro canal de youtube</p>
     				<p>Y apoyar dando click en la publicidad</p>
