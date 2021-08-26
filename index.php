@@ -69,10 +69,19 @@ body {
 			cierraDiv();
 			window.open("utils.php?act=init", "frameDet");
 		}else{
-			window.open("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value,  "frameDet");
-		   	alert("Canal Generado, Revise sus descargas");
-			cierraDiv();
-			window.open("utils.php?act=init", "frameDet");
+			
+			if(document.getElementById("idUsuario").value=="" || document.getElementById("nomUsuario").value=="" || document.getElementById("lista").value==""){
+				var respuesta = confirm("Desea generar el canal sin llenar por completo los datos?")
+			}else{
+				var respuesta=true;
+			}
+			if(respuesta == true){
+    			window.open("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value,  "frameDet");
+    		   	alert("Canal Generado, Revise sus descargas");
+    			cierraDiv();
+    			window.open("utils.php?act=init", "frameDet");
+			}
+			
 		}
 		
 			
