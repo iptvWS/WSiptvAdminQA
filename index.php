@@ -69,7 +69,7 @@ body {
 		}else{
 			
 			alert("id____________________");
-		   	window.open(uri, "frameDet");
+		   	window.open(uri, "_self");
 		   	alert("Canal Generado");
 		}
 		
