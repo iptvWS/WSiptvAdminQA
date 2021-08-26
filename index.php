@@ -65,14 +65,12 @@ body {
 	function modificaDatos(btn){
 		if(btn=="Aceptar"){
 			window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
-			alert("Datos modificados");
+			alert("Datos modificados con Exito");
 			cierraDiv();
 			window.open("utils.php?act=init", "frameDet");
 		}else{
-			
-			console.log("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value);
-		   	window.open("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value,  "frameDet");
-		   	alert("Canal Generado");
+			window.open("<?php echo "descarga.php?act=descarga&usr=";?>"+document.getElementById("idUsuario").value+"&nomusr="+document.getElementById("nomUsuario").value+"&list="+document.getElementById("lista").value,  "frameDet");
+		   	alert("Canal Generado, Revise sus descargas");
 			cierraDiv();
 			window.open("utils.php?act=init", "frameDet");
 		}
@@ -87,8 +85,8 @@ body {
 		valRadio=id;
 	}
 	function generaCanal(){
-		alert("Debe Generar canal");
-		abrirGenera();
+		alert("Presione + Generar Canal");
+		
 	}
 	function abrirModifica() { //CASF.[7.1.1]
 			
