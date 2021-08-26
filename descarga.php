@@ -3,7 +3,7 @@ $accion = $_GET["act"]; // le faltaba esta instrucción antes del if
 $uid = $_GET["uid"]; // le faltaba esta instrucción antes del if
 $usr = $_GET["usr"]; // le faltaba esta instrucción antes del if
 $id = $_GET["id"]; // le faltaba esta instrucción antes del if
-$lista = $_GET["lista"]; // le faltaba esta instrucción antes del if
+$lista = $_GET["list"]; // le faltaba esta instrucción antes del if
 $nomusr = $_GET["nomusr"]; // le faltaba esta instrucción antes del if
 
 echo "entra_".$accion;
