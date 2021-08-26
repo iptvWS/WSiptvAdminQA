@@ -71,7 +71,7 @@ body {
 		}else{
 			
 			alert("id____________________");
-		   	window.open("<?php echo "https://wtsplay.herokuapp.com/descarga.php?act=descarga&usr=Prueba12";?>",  "frameDet");
+		   	window.open("<?php echo "descarga.php?act=descarga&usr=Prueba12";?>",  "frameDet");
 		   	
 		}
 		
