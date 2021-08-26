@@ -65,14 +65,15 @@ body {
 	function modificaDatos(btn){
 		if(btn=="Aceptar"){
 			window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
+			alert("Datos modificados");
+			cierraDiv();
+			window.open("utils.php?act=init", "frameDet");
 		}else{
 			
 			alert("id____________________");
 		   	window.open(uri, "frameDet");
 		}
-		alert("Datos modificados");
-		cierraDiv();
-		window.open("utils.php?act=init", "frameDet");
+		
 		
 	}
 	function selID(id){
