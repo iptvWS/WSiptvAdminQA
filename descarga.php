@@ -120,9 +120,9 @@ function modificaArchivo($id){
 function obtieneSiguiente($usr, $lista, $nomusr){
 
     $conexion = null;
-    $conexion = conectar_PostgreSQL("snlprrjbxnlgvh", "fc88a83e0ad92f8138ead84e0803c8c60072fc541ae4870a45c6ab7e43784711"
-        ,  "ec2-34-195-143-54.compute-1.amazonaws.com"
-        , "dcfc8h1o8i0l2h");
+    $conexion = conectar_PostgreSQL("hyssxqqsenyzws", "f7393c156cc3f0fd9aa4c73673142c54a98a837bdf43fa73dc2392b55b176719"
+        ,  "ec2-52-0-67-144.compute-1.amazonaws.com"
+        , "dbreil1d2te41c");
     echo "conecto";
     $id= obtieneID( $conexion);
     echo modificarUid($conexion, $id, $usr, $lista, $nomusr);
