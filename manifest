@@ -1,0 +1,13 @@
+title=WTSPlay
+major_version=1
+minor_version=0
+build_version=1
+mm_icon_focus_hd=pkg:/images/WTSPlay.jpg
+mm_icon_focus_sd=pkg:/images/WTSPlay.jpg
+requires_audiometadata=1
+bs_libs_required=roku_ads_lib
+splash_screen_fhd=pkg:/images/WTSPlay.jpg
+splash_color=#000000
+splash_min_time=1
+ui_resolutions=fhd
+build_id=2
