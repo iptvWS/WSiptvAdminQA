@@ -67,7 +67,7 @@ body {
 			window.open("utils.php?act=modificaDatos&id="+document.frameDet.document.getElementById("fila"+valRadio).cells[1].innerHTML+"&nomUser="+document.getElementById("nomUsuario").value+"&usaLista=S"+"&idUsuario="+document.getElementById("idUsuario").value+"&list="+document.getElementById("lista").value, "frameDet");
 			alert("Datos modificados");
 			cierraDiv();
-			window.open("utils.php?act=init", "frameDet");
+			window.open("utils.php?act=init");
 		}else{
 			
 			alert("id____________________");
