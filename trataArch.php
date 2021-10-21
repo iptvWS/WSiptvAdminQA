@@ -112,7 +112,7 @@
                     
                     
                     
-                } else if(strpos($propiedad, "Logo")>0){
+                } else if(strpos($propiedad, "Logo")>=0){
                     
                     //   echo "escribe el valor";
                     $logo="tvg-logo=".$valor ." ";
