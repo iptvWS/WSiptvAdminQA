@@ -116,9 +116,11 @@
                     //   echo "escribe el valor";
                     $logo="tvg-logo=".$valor .$lineaSeparada[2] ." ";
                 } else if(strpos($propiedad, "Strem")<>""){
-                    echo "<br> nINGUNO VACIO22222:asaasdadsasda____ ".$nombre;
+                    echo "<br> URL____ ".$valor;
                     //   echo "escribe el valor";
+                    
                     $url=$valor .$lineaSeparada[2];
+                    echo "<br> URL2____ ".$url;
                 }
                /* if($propiedad=="Stream"){
                     //   echo "escribe el valor";
@@ -136,7 +138,7 @@
             }
             echo "<br> va a armar completo????????????:";
             if (!empty(trim($lineaCompleta)) AND !empty((trim($url)))) {
-                echo "<br> va a armar completo????????????:".$lineaCompleta;
+                echo "<br> Esta armando  completo????????????:".$lineaCompleta;
                 fwrite($listaCompleta, "\n". $lineaCompleta);
                 fwrite($listaCompleta, "\n". $url);
                 $lineaCompleta="";
