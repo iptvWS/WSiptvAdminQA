@@ -36,30 +36,18 @@
             echo "<br>___3__?: ".($miindice2>=0);
             echo "<br>___4__?: ".($miindice2<>0);
             echo "<br>___5__?: ".($miindice2!=0);
-            
+             
             echo "<br>___6__?: ".($miindice2<>1);
             echo "<br>___7__?: ".($miindice2!=1);
             
-            if (!empty($miindice2)){
+            if (($miindice2)=== false){
             
-                ECHO "<br>QUE PEDOOOOO?";
-                
-                echo "<br> Esta armando  completo????????????:".$lineaCompleta;
-                fwrite($listaCompleta, "\n". $lineaCompleta);
-                fwrite($listaCompleta, "\n". $url);
-                $lineaCompleta="";
-                $grupo="";
-                $url="";
-                
-                
-            }else{
-                
-            if(!empty($miindice) AND $miindice>=0){
+              if(!empty($miindice) AND $miindice>=0){
                 $grupo=substr($linea, $miindice+9);
                 $miindiceFin= strpos($grupo, "()") ;
                 echo "<br>en ciclo cuando el indice fue mayor 1 ".$grupo;
                 $grupo=trim(substr($grupo, 0, $miindiceFin));
-            }
+              }
             
             echo "<br>en ciclo while 2 ".$grupo;
             if(($grupo)=="loadConfig"){
@@ -167,6 +155,16 @@
             
             }
             
+            }else{
+                
+                ECHO "<br>QUE PEDOOOOO?";
+                
+                echo "<br> Esta armando  completo????????????:".$lineaCompleta;
+                fwrite($listaCompleta, "\n". $lineaCompleta);
+                fwrite($listaCompleta, "\n". $url);
+                $lineaCompleta="";
+                $grupo="";
+                $url="";
             }
            
             
