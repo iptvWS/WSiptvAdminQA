@@ -27,7 +27,7 @@
             $miindice= strpos($linea, "Function ") ;
             $lineaCompleta="";
             $url="";
-            echo "<br>___Linea a Procesar: ".$linea;
+            echo "<br>___Linea a Procesar: ".$linea.("__".($linea=="}")."");
             $miindice2=-1;
             $miindice2= strpos($linea, "}") ;
             echo "<br>___eSCIERRE_?: ".$miindice2;
