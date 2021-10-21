@@ -87,7 +87,7 @@
                 //echo "__propiedad".$propiedad;
                 //echo "valor".$valor;
                 // echo "_en whilw4";
-                if($propiedad=="{ Title"){
+                if(strpos($propiedad, "Title")>0){
                     echo "<br> nINGUNO VACIO:asaasdadsasda_0___ ";
                     //   echo "escribe el valor";
                     $nombre="tvg-name='".$valor."'";
