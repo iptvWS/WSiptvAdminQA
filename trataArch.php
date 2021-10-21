@@ -34,6 +34,12 @@
             echo "<br>___1__?: ".($miindice2==0);
             echo "<br>___2__?: ".($miindice2=="0");
             echo "<br>___3__?: ".($miindice2>=0);
+            echo "<br>___4__?: ".($miindice2<>0);
+            echo "<br>___5__?: ".($miindice2!=0);
+            
+            echo "<br>___6__?: ".($miindice2<>1);
+            echo "<br>___7__?: ".($miindice2!=1);
+            
             if (!empty($miindice2)){
             
                 ECHO "<br>QUE PEDOOOOO?";
