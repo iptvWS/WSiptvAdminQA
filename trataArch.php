@@ -23,14 +23,16 @@
             
             
             $linea=fgets($fh);
-            $miindice= strpos($linea, "Function ") ;
             
-            $grupo=substr($linea, $miindice+9);
-            $miindiceFin= strpos($grupo, "()") ;
-            echo "<br>en ciclo while 1 ".$grupo;
-            $grupo=substr($grupo, 0, $miindiceFin);
+            $miindice= strpos($linea, "Function ") ;
+            if($miindice>=0){
+                $grupo=substr($linea, $miindice+9);
+                $miindiceFin= strpos($grupo, "()") ;
+                echo "<br>en ciclo while 1 ".$grupo;
+                $grupo=trim(substr($grupo, 0, $miindiceFin));
+            }
             echo "<br>en ciclo while 2 ".$grupo;
-            if($grupo=="loadConfig"){
+            if(($grupo)=="loadConfig"){
                 $grupo="ITSTV MEXICO";
             }else if ($grupo=="loadConfigNovelas"){
                 $grupo="ITSTV NOVELAS";
