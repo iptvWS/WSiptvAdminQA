@@ -23,7 +23,7 @@
             
             
             $linea=fgets($fh);
-            
+            $lineaURL=fgets($fh);
             $miindice= strpos($linea, "Function ") ;
             echo "<br>___el indice: ".$miindice;
             if(!empty($miindice) AND $miindice>=0){
@@ -131,7 +131,8 @@
                 echo "<br> LineaComoQueda:::".$lineaCompleta;
                 //echo $propCompleta;
             }else{ //AQUIVAN LAS URL
-                $url=$linea;
+                echo "<br> url:::".$lineaCompleta;
+                $url=$lineaURL;
             }
             echo "<br> va a armar completo????????????:";
             if (!empty(trim($lineaCompleta)) AND !empty((trim($url)))) {
