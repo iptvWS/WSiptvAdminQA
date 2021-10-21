@@ -137,7 +137,8 @@
                     
                     $url=$valor .$lineaSeparada[2].$lineaSeparada[3];
                     echo "<br> URL2____ ".$url;
-                    $url= str_replace("\n", '', $url);
+                    $url= str_replace(array("\r\n", "\r", "\n"), '', $url);
+                    $url= str_replace("\"", '', $url);
                 }
                /* if($propiedad=="Stream"){
                     //   echo "escribe el valor";
@@ -151,7 +152,7 @@
                
                 $lineaCompleta = $encabezado .$nombre ." ".$logo .$grupo .$nombreFin;
                 echo "<br> LineaComoQueda:::".$lineaCompleta;
-                $lineaCompleta= str_replace("\n", '', $lineaCompleta);
+                $lineaCompleta= str_replace(array("\r\n", "\r", "\n"), '', $lineaCompleta);
                 //echo $propCompleta;
             }
             
