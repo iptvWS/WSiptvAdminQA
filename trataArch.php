@@ -118,6 +118,7 @@
                 fwrite($listaCompleta, "\n". $lineaCompleta);
                 fwrite($listaCompleta, "\n". $url);
                 $lineaCompleta="";
+                $grupo="";
                 $url="";
             }
           
