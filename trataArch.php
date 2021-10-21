@@ -30,7 +30,7 @@
             $miindice2= strpos($linea, "}") ;
             echo "<br>___eSCIERRE?: ".$miindice2;
             echo "<br>___eSCIERRE?: ".empty($miindice2);
-            if (empty($miindice2)){
+            if (empty($miindice2) AND $miindice<>0){
             
             if(!empty($miindice) AND $miindice>=0){
                 $grupo=substr($linea, $miindice+9);
