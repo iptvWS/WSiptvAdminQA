@@ -140,7 +140,7 @@
                 echo "<br> LineaComoQueda:::".$lineaCompleta;
                 //echo $propCompleta;
             }
-            echo "<br> va a armar completo????????????:".$lineaCompleta."_".$url;
+            
             }
             
             }else{
