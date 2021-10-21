@@ -115,7 +115,7 @@
                 } else if(strpos($propiedad, "Logo")>=0){
                     
                     //   echo "escribe el valor";
-                    $logo="tvg-logo=".$valor ." ";
+                    $logo="tvg-logo=".$valor .$lineaSeparada[2] ." ";
                 }
                /* if($propiedad=="Stream"){
                     //   echo "escribe el valor";
