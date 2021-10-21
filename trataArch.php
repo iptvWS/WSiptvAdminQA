@@ -25,7 +25,11 @@
             $linea=fgets($fh);
             //$lineaURL=fgets($fh);
             $miindice= strpos($linea, "Function ") ;
+            $miindice2= strpos($linea, "}") ;
             echo "<br>___Linea a Procesar: ".$linea;
+            
+            if (empty($miindice2)){
+            
             if(!empty($miindice) AND $miindice>=0){
                 $grupo=substr($linea, $miindice+9);
                 $miindiceFin= strpos($grupo, "()") ;
@@ -137,25 +141,25 @@
                 //echo $propCompleta;
             }
             echo "<br> va a armar completo????????????:".$lineaCompleta."_".$url;
-            
-            if (!empty(trim($lineaCompleta)) AND !empty((trim($url)))) {
-                echo "<br> Esta armando  completo????????????:".$lineaCompleta;
-                fwrite($listaCompleta, "\n". $lineaCompleta);
-                fwrite($listaCompleta, "\n". $url);
-                $lineaCompleta="";
-                $grupo="";
-                $url="";
             }
-          
+            
+            }else{
+            
+                
+                    echo "<br> Esta armando  completo????????????:".$lineaCompleta;
+                    fwrite($listaCompleta, "\n". $lineaCompleta);
+                    fwrite($listaCompleta, "\n". $url);
+                    $lineaCompleta="";
+                    $grupo="";
+                    $url="";
+            }
            
             
             //Ejemplo de elemento
             //#EXTINF:-1 tvg-id="" tvg-name="Outlander S05 E02" tvg-logo="http://cf8587662853df3ee.jpg" group-title="",Drama Outlander S05 E02
             //
             
-         
-            
-            }
+        
             
         }
         echo "casi termina";
