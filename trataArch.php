@@ -32,7 +32,7 @@
             $miindice2= strpos($linea, "}") ;
             echo "<br>___eSCIERRE_?: ".$miindice2;
             echo "<br>_____?: ".(!empty($miindice2) AND $miindice2>=0);
-            if (!empty($miindice2) OR $miindice2==0){
+            if ( $miindice2==0){
             
                 ECHO "<br>QUE PEDOOOOO?";
                 
