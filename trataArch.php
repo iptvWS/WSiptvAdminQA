@@ -13,7 +13,7 @@
         $listaCompleta = fopen($file, "a") or die("Unable to open file!");
         
 
-       $encabezado = "#EXTINF:-1 tvg-id='' ";
+       $encabezado = "#EXTINF:-1 tvg-id=\"\" ";
         
         
         
@@ -21,11 +21,11 @@
         
         while(!feof($fh)) {//aqui va recorrer el otro archivo
             
-            echo "en ciclo while";
+            
             $linea=fgets($fh);
             $miindice= strpos($linea, "Function ") ;
             $grupo=substr($linea, $miindice+9);
-            
+            echo "\n en ciclo while 1 ".$grupo;
             if($grupo=="loadConfig()"){
                 $grupo="ITSTV MEXICO";
             }else if ($grupo=="loadConfigNovelas()"){
@@ -56,7 +56,7 @@
                 $grupo="ITSTV PELICULAS DE ESTRENO";
             }else{
             
-            
+                echo "\n en ciclo 2 while".$grupo;
             //LINEA PARA ESCRIBIRLE AL ARCHIVO ORIGINAL
             //  fwrite($listaCompleta, "\n". $txt);
             
@@ -66,6 +66,9 @@
             // take-off old "\r\n"
             $propiedad= trim($lineaSeparada[0]);
             $valor = trim($lineaSeparada[1]);
+            
+            echo "\n Prop: ".$propiedad."_val_".$valor;
+            
             //echo "_en whilw3";
             // check for empty indexes
             if (!empty($propiedad) AND !empty($valor)) {
