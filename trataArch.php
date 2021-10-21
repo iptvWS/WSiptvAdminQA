@@ -107,7 +107,7 @@
                 
                 
                 $lineaCompleta = $encabezado .$nombre .$logo .$grupo .$nombreFin;
-                
+                echo "<br> LineaComoQueda:::".$lineaCompleta;
                 //echo $propCompleta;
             }else{ //AQUIVAN LAS URL
                 $url=$linea;
