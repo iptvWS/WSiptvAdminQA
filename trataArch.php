@@ -32,35 +32,50 @@
                 echo "<br>en ciclo cuando el indice fue mayor 1 ".$grupo;
                 $grupo=trim(substr($grupo, 0, $miindiceFin));
             }
+            
             echo "<br>en ciclo while 2 ".$grupo;
             if(($grupo)=="loadConfig"){
                 $grupo="ITSTV MEXICO";
+                $grupo="group-title='".$grupo."'";
             }else if ($grupo=="loadConfigNovelas"){
                 $grupo="ITSTV NOVELAS";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfigDiscoverys"){
                 $grupo="ITSTV CULTURA";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfigCartoons"){
                 $grupo="ITSTV INFANTIL";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfigPremium"){
                 $grupo="ITSTV ENTRETENIMIENTO";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfigPeliculas"){
                 $grupo="ITSTV PELICULAS";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfigMusic"){
                 $grupo="ITSTV MUSICA";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfigSports"){
                 $grupo="ITSTV DEPORTES";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfigPluto"){
                 $grupo="ITSTV PLUTO";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfig24hrs"){
                 $grupo="ITSTV CANALES 24/7";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfigMovistar"){
                 $grupo="ITSTV MOVISTAR";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfigPeru"){
                 $grupo="ITSTV TV PERU";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfigNoticias"){
                 $grupo="ITSTV TV NOTICIAS";
+                $grupo="group-title='".$grupo."'";
             }elseif ($grupo=="loadConfigMovies"){
                 $grupo="ITSTV PELICULAS DE ESTRENO";
+                $grupo="group-title='".$grupo."'";
             }else{
             
                 echo "<br> en ciclo 3 while".$grupo;
@@ -90,7 +105,7 @@
                 if(strpos($propiedad, "Title")>0){
                     echo "<br> nINGUNO VACIO:asaasdadsasda_0___ ";
                     //   echo "escribe el valor";
-                    $nombre="tvg-name='".$valor."'";
+                    $nombre="tvg-name=".$valor;
                     $nombreFin=", ".$valor;
                     
                     echo "<br> nINGUNO VACIO:asaasdadsasda____ ".$nombre;
@@ -111,8 +126,7 @@
                     $nombre="tvg-logo=".$valor;
                 }
                */
-                
-                
+               
                 $lineaCompleta = $encabezado .$nombre .$logo .$grupo .$nombreFin;
                 echo "<br> LineaComoQueda:::".$lineaCompleta;
                 //echo $propCompleta;
@@ -121,7 +135,7 @@
             }
             
             if (!empty(trim($lineaCompleta)) AND !empty((trim($url)))) {
-                $grupo="group-title='".$grupo."'";
+                
                 fwrite($listaCompleta, "\n". $lineaCompleta);
                 fwrite($listaCompleta, "\n". $url);
                 $lineaCompleta="";
