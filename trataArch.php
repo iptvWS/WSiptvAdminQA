@@ -26,7 +26,7 @@
             
             $miindice= strpos($linea, "Function ") ;
             echo "<br>___el indice: ".$miindice;
-            if($miindice>=0){
+            if(!empty($miindice) AND $miindice>=0){
                 $grupo=substr($linea, $miindice+9);
                 $miindiceFin= strpos($grupo, "()") ;
                 echo "<br>en ciclo cuando el indice fue mayor 1 ".$grupo;
