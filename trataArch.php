@@ -23,9 +23,9 @@
             
             
             $linea=fgets($fh);
-            $lineaURL=fgets($fh);
+            //$lineaURL=fgets($fh);
             $miindice= strpos($linea, "Function ") ;
-            echo "<br>___el indice: ".$miindice;
+            echo "<br>___Linea a Procesar: ".$linea;
             if(!empty($miindice) AND $miindice>=0){
                 $grupo=substr($linea, $miindice+9);
                 $miindiceFin= strpos($grupo, "()") ;
