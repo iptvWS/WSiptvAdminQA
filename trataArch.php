@@ -25,7 +25,7 @@
             $linea=fgets($fh);
             
             $miindice= strpos($linea, "Function ") ;
-            echo "<br>$miindice ".$miindice;
+            echo "<br>___el indice: ".$miindice;
             if($miindice>=0){
                 $grupo=substr($linea, $miindice+9);
                 $miindiceFin= strpos($grupo, "()") ;
