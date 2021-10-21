@@ -27,9 +27,10 @@
             $miindice= strpos($linea, "Function ") ;
             
             echo "<br>___Linea a Procesar: ".$linea;
+            $miindice2=-1;
             $miindice2= strpos($linea, "}") ;
-            echo "<br>___eSCIERRE?: ".$miindice2;
-            echo "<br>___eSCIERRE?: ".empty($miindice2);
+            echo "<br>___eSCIERRE_?: ".$miindice2;
+            echo "<br>___eSCIERRE__?: ".empty($miindice2);
             if (($miindice2)<>"0"){
             
             if(!empty($miindice) AND $miindice>=0){
