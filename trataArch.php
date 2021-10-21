@@ -98,7 +98,7 @@
             // check for empty indexes
             if (!empty($propiedad) AND !empty($valor)) {
                 echo "<br> nINGUNO VACIO:________________________ ".$propiedad;
-                echo "<br> nINGUNO VACIO:________________________ ".(strpos($propiedad, "Title"));
+                echo "<br> nINGUNO VACIO:________________________ ".(strpos($propiedad, "Logo"));
                 //echo "__propiedad".$propiedad;
                 //echo "valor".$valor;
                 // echo "_en whilw4";
