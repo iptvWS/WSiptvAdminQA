@@ -77,7 +77,7 @@
             $propiedad= trim($lineaSeparada[0]);
             $valor = trim($lineaSeparada[1]);
             
-            echo "<br> Prop: ".$propiedad."_val_".$valor;
+            echo "<br> Prop:_".$propiedad."_val_".$valor;
             
             //echo "_en whilw3";
             // check for empty indexes
@@ -97,6 +97,7 @@
                     
                     
                 } else if($propiedad=="Logo"){
+                    echo "<br> logo::".$logo;
                     //   echo "escribe el valor";
                     $logo="tvg-logo='".$valor ."'";
                 }
