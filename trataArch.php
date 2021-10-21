@@ -111,8 +111,8 @@
                     
                     
                     
-                } else if(strpos($propiedad, "Logo")>=0){
-                    echo "<br> nINGUNO VACIO:asaasdadsasda____ ".$nombre;
+                } else if(strpos($propiedad, "Logo")<>""){
+                    echo "<br> nINGUNO VACIO22222:asaasdadsasda____ ".$nombre;
                     //   echo "escribe el valor";
                     $logo="tvg-logo=".$valor .$lineaSeparada[2] ." ";
                 }
