@@ -91,6 +91,11 @@
                     //   echo "escribe el valor";
                     $nombre="tvg-name='".$valor."'";
                     $nombreFin=", ".$valor;
+                    
+                    echo "<br> nINGUNO VACIO:asaasdadsasda____ ".$nombre;
+                    
+                    
+                    
                 } else if($propiedad=="Logo"){
                     //   echo "escribe el valor";
                     $logo="tvg-logo='".$valor ."'";
