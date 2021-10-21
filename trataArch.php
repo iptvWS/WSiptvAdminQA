@@ -26,7 +26,7 @@
             $miindice= strpos($linea, "Function ") ;
             $miindiceFin= strpos($linea, "()") ;
             $grupo=substr($linea, $miindice+9);
-            $grupo=substr($linea, $miindiceFin);
+            $grupo=substr($grupo, $miindiceFin);
             echo "/n en ciclo while 1 ".$grupo;
             if($grupo=="loadConfig"){
                 $grupo="ITSTV MEXICO";
