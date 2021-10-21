@@ -25,9 +25,10 @@
             $linea=fgets($fh);
             //$lineaURL=fgets($fh);
             $miindice= strpos($linea, "Function ") ;
-            $miindice2= strpos($linea, "}") ;
-            echo "<br>___Linea a Procesar: ".$linea;
             
+            echo "<br>___Linea a Procesar: ".$linea;
+            $miindice2= strpos($linea, "}") ;
+            echo "<br>___eSCIERRE?: ".$miindice2;
             if (empty($miindice2)){
             
             if(!empty($miindice) AND $miindice>=0){
