@@ -17,7 +17,7 @@
         
         
         
-       echo \n."antes while";
+       echo "antes while";
         
         while(!feof($fh)) {//aqui va recorrer el otro archivo
             
@@ -27,7 +27,7 @@
             $miindiceFin= strpos($linea, "()") ;
             $grupo=substr($linea, $miindice+9);
             $grupo=substr($linea, $miindiceFin);
-            echo \n."\n en ciclo while 1 ".$grupo;
+            echo "/n en ciclo while 1 ".$grupo;
             if($grupo=="loadConfig"){
                 $grupo="ITSTV MEXICO";
             }else if ($grupo=="loadConfigNovelas"){
@@ -58,7 +58,7 @@
                 $grupo="ITSTV PELICULAS DE ESTRENO";
             }else{
             
-                echo \n."\n en ciclo 2 while".$grupo;
+                echo "/n en ciclo 2 while".$grupo;
             //LINEA PARA ESCRIBIRLE AL ARCHIVO ORIGINAL
             //  fwrite($listaCompleta, "\n". $txt);
             
@@ -69,7 +69,7 @@
             $propiedad= trim($lineaSeparada[0]);
             $valor = trim($lineaSeparada[1]);
             
-            echo "\n Prop: ".$propiedad."_val_".$valor;
+            echo "/n Prop: ".$propiedad."_val_".$valor;
             
             //echo "_en whilw3";
             // check for empty indexes
