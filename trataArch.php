@@ -29,6 +29,7 @@
             echo "<br>___Linea a Procesar: ".$linea;
             $miindice2= strpos($linea, "}") ;
             echo "<br>___eSCIERRE?: ".$miindice2;
+            echo "<br>___eSCIERRE?: ".empty($miindice2);
             if (empty($miindice2)){
             
             if(!empty($miindice) AND $miindice>=0){
@@ -145,7 +146,7 @@
             }
             
             }else{
-            
+            ECHO "QUE PEDOOOOO?";
                 
                     echo "<br> Esta armando  completo????????????:".$lineaCompleta;
                     fwrite($listaCompleta, "\n". $lineaCompleta);
