@@ -28,7 +28,7 @@
             if($miindice>=0){
                 $grupo=substr($linea, $miindice+9);
                 $miindiceFin= strpos($grupo, "()") ;
-                echo "<br>en ciclo while 1 ".$grupo;
+                echo "<br>en ciclo cuando el indice fue mayor 1 ".$grupo;
                 $grupo=trim(substr($grupo, 0, $miindiceFin));
             }
             echo "<br>en ciclo while 2 ".$grupo;
