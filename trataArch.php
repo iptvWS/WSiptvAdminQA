@@ -111,7 +111,7 @@
                     
                     
                     
-                } else if(!empty((strpos($propiedad, "Logo"))) AND strpos($propiedad, "Logo")>=0){
+                } else if(!empty((strpos($propiedad, "Logo"))) && strpos($propiedad, "Logo")>=0){
                     echo "<br> En Logo?????????? ".$propiedad;
                     //   echo "escribe el valor";
                     $logo="tvg-logo=".$valor .$lineaSeparada[2] ." ";
