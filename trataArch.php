@@ -136,7 +136,8 @@
                 echo "<br> LineaComoQueda:::".$lineaCompleta;
                 //echo $propCompleta;
             }
-            echo "<br> va a armar completo????????????:";
+            echo "<br> va a armar completo????????????:".$lineaCompleta."_".$url;
+            
             if (!empty(trim($lineaCompleta)) AND !empty((trim($url)))) {
                 echo "<br> Esta armando  completo????????????:".$lineaCompleta;
                 fwrite($listaCompleta, "\n". $lineaCompleta);
