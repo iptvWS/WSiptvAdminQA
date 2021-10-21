@@ -25,14 +25,27 @@
             $linea=fgets($fh);
             //$lineaURL=fgets($fh);
             $miindice= strpos($linea, "Function ") ;
-            
+            $lineaCompleta="";
+            $url="";
             echo "<br>___Linea a Procesar: ".$linea;
             $miindice2=-1;
             $miindice2= strpos($linea, "}") ;
             echo "<br>___eSCIERRE_?: ".$miindice2;
             echo "<br>___eSCIERRE__?: ".empty($miindice2);
-            if (($miindice2)<>"0"){
+            if (($miindice2)>=0){
             
+                ECHO "QUE PEDOOOOO?";
+                
+                echo "<br> Esta armando  completo????????????:".$lineaCompleta;
+                fwrite($listaCompleta, "\n". $lineaCompleta);
+                fwrite($listaCompleta, "\n". $url);
+                $lineaCompleta="";
+                $grupo="";
+                $url="";
+                
+                
+            }else{
+                
             if(!empty($miindice) AND $miindice>=0){
                 $grupo=substr($linea, $miindice+9);
                 $miindiceFin= strpos($grupo, "()") ;
@@ -146,15 +159,6 @@
             
             }
             
-            }else{
-            ECHO "QUE PEDOOOOO?";
-                
-                    echo "<br> Esta armando  completo????????????:".$lineaCompleta;
-                    fwrite($listaCompleta, "\n". $lineaCompleta);
-                    fwrite($listaCompleta, "\n". $url);
-                    $lineaCompleta="";
-                    $grupo="";
-                    $url="";
             }
            
             
