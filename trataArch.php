@@ -119,7 +119,7 @@
                     echo "<br> URL____ ".$valor;
                     //   echo "escribe el valor";
                     
-                    $url=$valor .$lineaSeparada[2];
+                    $url=$valor .$lineaSeparada[2].$lineaSeparada[3];
                     echo "<br> URL2____ ".$url;
                 }
                /* if($propiedad=="Stream"){
