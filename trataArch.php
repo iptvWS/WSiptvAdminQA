@@ -133,9 +133,9 @@
             }else{ //AQUIVAN LAS URL
                 $url=$linea;
             }
-            
+            echo "<br> va a armar completo????????????:";
             if (!empty(trim($lineaCompleta)) AND !empty((trim($url)))) {
-                
+                echo "<br> va a armar completo????????????:".$lineaCompleta;
                 fwrite($listaCompleta, "\n". $lineaCompleta);
                 fwrite($listaCompleta, "\n". $url);
                 $lineaCompleta="";
