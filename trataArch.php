@@ -18,15 +18,15 @@
        $logo="";
         
        echo "<br>antes while";
-        
+       $lineaCompleta="";
+       $url="";
+       
         while(!feof($fh)) {//aqui va recorrer el otro archivo
             
             
             $linea=fgets($fh);
             //$lineaURL=fgets($fh);
             $miindice= strpos($linea, "Function ") ;
-            $lineaCompleta="";
-            $url="";
             echo "<br>___Linea a Procesar: ".$linea.("__".($linea=="}\n")."/_");
             $miindice2=-1;
             $miindice2= strpos($linea, "}") ;
