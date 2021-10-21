@@ -115,7 +115,7 @@
                     echo "<br> nINGUNO VACIO22222:asaasdadsasda____ ".$nombre;
                     //   echo "escribe el valor";
                     $logo="tvg-logo=".$valor .$lineaSeparada[2] ." ";
-                } else if(strpos($propiedad, "Strem")<>""){
+                } else if(strpos($propiedad, "Stream")<>""){
                     echo "<br> URL____ ".$valor;
                     //   echo "escribe el valor";
                     
