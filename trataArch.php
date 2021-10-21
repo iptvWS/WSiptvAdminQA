@@ -112,10 +112,10 @@
                     
                     
                     
-                } else if($propiedad=="Logo"){
-                    echo "<br> logo::".$logo;
+                } else if(strpos($propiedad, "Logo")>0){
+                    
                     //   echo "escribe el valor";
-                    $logo="tvg-logo='".$valor ."'";
+                    $logo="tvg-logo=".$valor ." ";
                 }
                /* if($propiedad=="Stream"){
                     //   echo "escribe el valor";
@@ -127,7 +127,7 @@
                 }
                */
                
-                $lineaCompleta = $encabezado .$nombre .$logo .$grupo .$nombreFin;
+                $lineaCompleta = $encabezado .$nombre ." ".$logo .$grupo .$nombreFin;
                 echo "<br> LineaComoQueda:::".$lineaCompleta;
                 //echo $propCompleta;
             }else{ //AQUIVAN LAS URL
