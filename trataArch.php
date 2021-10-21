@@ -87,7 +87,7 @@
                 //echo "__propiedad".$propiedad;
                 //echo "valor".$valor;
                 // echo "_en whilw4";
-                if($propiedad=="Title"){
+                if($propiedad=="{   Title:"){
                     //   echo "escribe el valor";
                     $nombre="tvg-name='".$valor."'";
                     $nombreFin=", ".$valor;
