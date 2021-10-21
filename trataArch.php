@@ -17,46 +17,48 @@
         
         
         
-       echo "antes while";
+       echo \n."antes while";
         
         while(!feof($fh)) {//aqui va recorrer el otro archivo
             
             
             $linea=fgets($fh);
             $miindice= strpos($linea, "Function ") ;
+            $miindiceFin= strpos($linea, "()") ;
             $grupo=substr($linea, $miindice+9);
-            echo "\n en ciclo while 1 ".$grupo;
-            if($grupo=="loadConfig()"){
+            $grupo=substr($linea, $miindiceFin);
+            echo \n."\n en ciclo while 1 ".$grupo;
+            if($grupo=="loadConfig"){
                 $grupo="ITSTV MEXICO";
-            }else if ($grupo=="loadConfigNovelas()"){
+            }else if ($grupo=="loadConfigNovelas"){
                 $grupo="ITSTV NOVELAS";
-            }elseif ($grupo=="loadConfigDiscoverys()"){
+            }elseif ($grupo=="loadConfigDiscoverys"){
                 $grupo="ITSTV CULTURA";
-            }elseif ($grupo=="loadConfigCartoons()"){
+            }elseif ($grupo=="loadConfigCartoons"){
                 $grupo="ITSTV INFANTIL";
-            }elseif ($grupo=="loadConfigPremium()"){
+            }elseif ($grupo=="loadConfigPremium"){
                 $grupo="ITSTV ENTRETENIMIENTO";
-            }elseif ($grupo=="loadConfigPeliculas()"){
+            }elseif ($grupo=="loadConfigPeliculas"){
                 $grupo="ITSTV PELICULAS";
-            }elseif ($grupo=="loadConfigMusic()"){
+            }elseif ($grupo=="loadConfigMusic"){
                 $grupo="ITSTV MUSICA";
-            }elseif ($grupo=="loadConfigSports()"){
+            }elseif ($grupo=="loadConfigSports"){
                 $grupo="ITSTV DEPORTES";
-            }elseif ($grupo=="loadConfigPluto()"){
+            }elseif ($grupo=="loadConfigPluto"){
                 $grupo="ITSTV PLUTO";
-            }elseif ($grupo=="loadConfig24hrs()"){
+            }elseif ($grupo=="loadConfig24hrs"){
                 $grupo="ITSTV CANALES 24/7";
-            }elseif ($grupo=="loadConfigMovistar()"){
+            }elseif ($grupo=="loadConfigMovistar"){
                 $grupo="ITSTV MOVISTAR";
-            }elseif ($grupo=="loadConfigPeru()"){
+            }elseif ($grupo=="loadConfigPeru"){
                 $grupo="ITSTV TV PERU";
-            }elseif ($grupo=="loadConfigNoticias()"){
+            }elseif ($grupo=="loadConfigNoticias"){
                 $grupo="ITSTV TV NOTICIAS";
-            }elseif ($grupo=="loadConfigMovies()"){
+            }elseif ($grupo=="loadConfigMovies"){
                 $grupo="ITSTV PELICULAS DE ESTRENO";
             }else{
             
-                echo "\n en ciclo 2 while".$grupo;
+                echo \n."\n en ciclo 2 while".$grupo;
             //LINEA PARA ESCRIBIRLE AL ARCHIVO ORIGINAL
             //  fwrite($listaCompleta, "\n". $txt);
             
