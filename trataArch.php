@@ -70,6 +70,9 @@
             // echo "_en whilw";
             $lineaSeparada = explode(':',$linea);
             
+            
+            echo "<br> en ciclo 4 LIMEA SEP".$lineaSeparada;
+            
             // take-off old "\r\n"
             $propiedad= trim($lineaSeparada[0]);
             $valor = trim($lineaSeparada[1]);
@@ -79,6 +82,8 @@
             //echo "_en whilw3";
             // check for empty indexes
             if (!empty($propiedad) AND !empty($valor)) {
+                
+                echo "<br> nINGUNO VACIO:________________________ ";
                 //echo "__propiedad".$propiedad;
                 //echo "valor".$valor;
                 // echo "_en whilw4";
@@ -99,7 +104,7 @@
                     $nombre="tvg-logo=".$valor;
                 }
                */
-                $grupo="group-title='".$grupo."'";
+                
                 
                 $lineaCompleta = $encabezado .$nombre .$logo .$grupo .$nombreFin;
                 
@@ -109,6 +114,7 @@
             }
             
             if (!empty(trim($lineaCompleta)) AND !empty((trim($url)))) {
+                $grupo="group-title='".$grupo."'";
                 fwrite($listaCompleta, "\n". $lineaCompleta);
                 fwrite($listaCompleta, "\n". $url);
                 $lineaCompleta="";
