@@ -24,11 +24,12 @@
             
             $linea=fgets($fh);
             $miindice= strpos($linea, "Function ") ;
-            $miindiceFin= strpos($linea, "()") ;
+            
             $grupo=substr($linea, $miindice+9);
+            $miindiceFin= strpos($grupo, "()") ;
             echo "<br>en ciclo while 1 ".$grupo;
             $grupo=substr($grupo, $miindiceFin);
-            echo "<br>en ciclo while 1 ".$grupo;
+            echo "<br>en ciclo while 2 ".$grupo;
             if($grupo=="loadConfig"){
                 $grupo="ITSTV MEXICO";
             }else if ($grupo=="loadConfigNovelas"){
@@ -59,7 +60,7 @@
                 $grupo="ITSTV PELICULAS DE ESTRENO";
             }else{
             
-                echo "<br> en ciclo 2 while".$grupo;
+                echo "<br> en ciclo 3 while".$grupo;
             //LINEA PARA ESCRIBIRLE AL ARCHIVO ORIGINAL
             //  fwrite($listaCompleta, "\n". $txt);
             
